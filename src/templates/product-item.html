@@ -1,0 +1,26 @@
+<div
+  class="flex flex-col p-2 overflow-hidden bg-white rounded-md cursor-pointer group"
+>
+  <figure>
+    <img
+      class="object-cover w-56 h-56 mx-auto transition-transform duration-300 rounded-2xl group-hover:scale-105"
+      src="{{product_image}}"
+      alt="{{product_alt}}"
+    />
+  </figure>
+  <div class="flex flex-col flex-1 p-4 mt-4 space-y-4">
+    <h4 class="text-xl font-bold">{{product_title}}</h4>
+    <a
+      href="/category?name={{product_category}}"
+      class="px-4 py-1 text-sm text-gray-400 uppercase bg-gray-100 max-w-fit rounded-2xl"
+    >
+      {{product_category}}
+    </a>
+    <p class="text-lg font-bold text-green-600">${{product_price}}</p>
+  </div>
+  <a
+    class="inline-flex justify-center mt-auto px-4 py-2 text-center duration-300 border border-gray-900 rounded-md hover:border-transparent hover:text-gray-200 hover:bg-gray-900 transition-color"
+    href="/detail?id={{product_id}}"
+    >Show Details
+  </a>
+</div>

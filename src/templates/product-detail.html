@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTTP Server | {{product_title}}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="flex flex-col items-center gap-24 p-2 mx-auto lg:flex-row lg:my-6 lg:max-w-[70vw]"
+    >
+      <figure>
+        <img
+          class="object-cover max-w-sm mx-auto rounded-2xl"
+          src="{{product_image}}"
+          alt="{{product_alt}}"
+        />
+      </figure>
+      <div class="flex flex-col gap-4">
+        <a
+          class="max-w-fit inline-flex px-4 py-2 rounded-md border border-gray-100 hover:border-transparent hover:text-gray-200 hover:bg-gray-900 transition-color duration-300"
+          href="/"
+          >Go Back
+        </a>
+        <h1 class="text-4xl font-extrabold">{{product_title}}</h1>
+        <p class="text-lg font-bold text-green-600">${{product_price}}</p>
+        <p
+          class="px-4 py-2 text-xs text-lg font-bold text-gray-600 uppercase bg-gray-100 rounded-md max-w-fit"
+        >
+          {{product_category}}
+        </p>
+        <p class="text-lg text-gray-600">{{product_description}}</p>
+      </div>
+    </main>
+  </body>
+</html>

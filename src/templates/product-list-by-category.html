@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTTP Server | {{product_category}}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h2 class="font-bold text-gray-400 text-2xl text-center mt-12">
+      Showing products by category:
+      <span class="text-gray-900 font-bold uppercase"
+        >{{product_category}}
+      </span>
+    </h2>
+    <main
+      class="flex flex-col items-center gap-24 p-2 mx-auto lg:flex-row lg:my-2 lg:max-w-[70vw]"
+    >
+      {{product_list_by_category}}
+    </main>
+  </body>
+</html>
