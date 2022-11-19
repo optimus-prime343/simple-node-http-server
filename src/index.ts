@@ -12,7 +12,6 @@ const DATA_DIR = path.join(ROOT_DIR, 'src', 'data')
 const TEMPLATES_DIR = path.join(ROOT_DIR, 'src', 'templates')
 
 const PORT = process.env.PORT ? Number(process.env.PORT) : 8000
-const HOST_NAME = process.env.HOST_NAME ?? 'localhost'
 
 const products: TProduct[] = JSON.parse(
   fs.readFileSync(path.join(DATA_DIR, 'products.json'), 'utf-8'),
@@ -115,6 +114,6 @@ const server = http.createServer((req, res) => {
   res.end('Not found')
 })
 
-server.listen(PORT, HOST_NAME, (): void => {
+server.listen(PORT, undefined, (): void => {
   console.log(`Server running on port ${PORT}`)
 })
