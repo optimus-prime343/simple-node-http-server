@@ -29,10 +29,6 @@ const productListByCategoryTemplate = fs.readFileSync(
   path.join(TEMPLATES_DIR, 'product-list-by-category.html'),
   'utf-8',
 )
-console.log(
-  '🚀 ~ file: main.ts ~ line 28 ~ productDetailHTMLTemplate',
-  productDetailHTMLTemplate,
-)
 
 const generateProductListHTML = (products: TProduct[]): string => {
   const productListHTML = products
