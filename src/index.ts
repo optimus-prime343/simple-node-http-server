@@ -1,8 +1,11 @@
+import dotenv from 'dotenv'
 import fs from 'fs'
 import http from 'http'
 import path from 'path'
 
 import { TProduct } from './types/product'
+
+dotenv.config()
 
 const ROOT_DIR = process.cwd()
 const DATA_DIR = path.join(ROOT_DIR, 'src', 'data')

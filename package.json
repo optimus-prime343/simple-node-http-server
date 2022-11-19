@@ -6,6 +6,7 @@
     "node": ">= 14 <17"
   },
   "devDependencies": {
+    "@types/dotenv": "^8.2.0",
     "@types/jest": "~29.1",
     "@types/node": "~16",
     "@typescript-eslint/eslint-plugin": "~5.39",
@@ -40,6 +41,7 @@
   "author": "Jakub Synowiec <jsynowiec@users.noreply.github.com>",
   "license": "Apache-2.0",
   "dependencies": {
+    "dotenv": "^16.0.3",
     "tslib": "~2.4"
   },
   "volta": {
